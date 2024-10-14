@@ -69,7 +69,6 @@ Figure 3:  Patient distribution by Diagnosis
 
 
 
-
 Figure 4 presents two horizontal bar charts illustrating patient distribution based on admission and discharge types. Emergency admissions account for the largest proportion with 54,000 patients, while elective and urgent admissions are reported for 19,000 and 18,000, respectively. Regarding discharge types, the majority of patients, 74,000 in total, were discharged to home care. Meanwhile, 19,000 patients were discharged to skilled nursing, rehabilitation, or psychiatric care facilities. These patterns highlight the predominant reliance on emergency services for admissions and home care as the most frequent discharge outcome.
 
 [![Diab-Med-Readmission-pages-to-jpg-0005.jpg](https://i.postimg.cc/FKDzPVQK/Diab-Med-Readmission-pages-to-jpg-0005.jpg)](https://postimg.cc/hJQKvxvF)
