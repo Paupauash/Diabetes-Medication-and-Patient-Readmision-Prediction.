@@ -14,13 +14,10 @@ By addressing these issues, we seek to inform future directions that could signi
 
 
 Ø  METHODS
-
-Data
-
+Data.
 The dataset used is from the UCI Machine Learning Repository [3]. It contains 50 variables characterized as multivariate, with a mix of quantitative and qualitative. It also has more than 100,000 observations.
 
-Analysis
-
+Analysis.
 We performed exploratory data analysis by presenting key variables and their frequency distributions and visualizing using Power BI.
 Before initiating the mining process, we checked correlations between variables: using Pearson for quantitative-quantitative variables, Chi-square for qualitative-qualitative, and Cramér's V for quantitative-qualitative pairs. The correlations were visualized via a heatmap in Rstudio.
 The variables "diabetesMed" and "readmitted" represent respectively Diabetes medications and Patient readmission 
@@ -30,7 +27,7 @@ Using confusion matrices, we evaluated model performance and selected the most a
 
 Ø  RESULTS
 
-Data cleaning
+Data cleaning.
 
 Single-value columns: The columns “Examide” and “Citoglipton” contained the same value for all entries in the dataset. Since such columns do not contribute to the analysis, they were removed.
 Unique-value columns: “encounter_id” and “patient_number” had unique values for each record, offering no analytical significance. As a result, they were excluded from further analysis.
@@ -60,27 +57,25 @@ The pie chart illustrates the distribution of patients based on race, showing th
 
 
 Patient distribution by Diagnosis.
-The bar chats provide a comprehensive overview of patient diagnoses using ICD-9 codes, showcasing the distribution across primary (diag_1), secondary (diag_2), and tertiary (diag_3) diagnostic categories. Circulatory issues consistently dominate across all three categories, affecting approximately 30,000 patients in each, highlighting the prevalence of cardiovascular problems both as primary conditions and comorbidities. Respiratory problems rank second in primary diagnoses but decrease in prominence in secondary and tertiary categories, suggesting they often drive initial hospital visits. Conversely, diabetes shows an interesting pattern, rising from fourth place in primary diagnoses to second in both secondary and tertiary categories, indicating its frequent role as a complicating factor or comorbidity. Digestive issues and injuries feature prominently in primary diagnoses but less so in subsequent categories, reflecting their nature as common reasons for seeking immediate care.
+The bar charts provide a comprehensive overview of patient diagnoses using ICD-9 codes, showcasing the distribution across primary (diag_1), secondary (diag_2), and tertiary (diag_3) diagnostic categories. Circulatory issues consistently dominate across all three categories, affecting approximately 30,000 patients in each, highlighting the prevalence of cardiovascular problems both as primary conditions and comorbidities. Respiratory problems rank second in primary diagnoses but decrease in prominence in secondary and tertiary categories, suggesting they often drive initial hospital visits. Conversely, diabetes shows an interesting pattern, rising from fourth place in primary diagnoses to second in both secondary and tertiary categories, indicating its frequent role as a complicating factor or comorbidity. Digestive issues and injuries feature prominently in primary diagnoses but less so in subsequent categories, reflecting their nature as common reasons for seeking immediate care.
 
 
-Patient Distribution based on Admission and Discharge types
+Patient Distribution based on Admission and Discharge types.
 The horizontal bar charts illustrate patient distribution based on admission and discharge types. Emergency admissions account for the largest proportion with 54,000 patients, while elective and urgent admissions are reported for 19,000 and 18,000, respectively. Regarding discharge types, the majority of patients, 74,000 in total, were discharged to home care. Meanwhile, 19,000 patients were discharged to skilled nursing, rehabilitation, or psychiatric care facilities. These patterns highlight the predominant reliance on emergency services for admissions and home care as the most frequent discharge outcome.
 
 
-
+Diabetes medication and hospital readmission among patients.
 The bar charts  display key trends regarding diabetes medication and hospital readmission among patients. Of the total cohort, 78,000 patients (77%) were receiving diabetes medication, while 23,000 (23%) were not. Regarding hospital readmissions, 55,000 patients (55%) did not experience a readmission, 36,000 (36%) were readmitted more than 30 days post-discharge, and 11,000 (11%) were readmitted within 30 days. The high rate of readmissions, particularly in the >30-day group, suggests potential gaps in post-discharge care or disease management.
 
 
 
-Correlation Analysis
+Correlation Analysis.
 
-Correlation analysis is a statistical technique that evaluates the strength and direction of the relationship between two variables. A strong correlation indicates that as one variable changes, the other variable tends to change predictably, while a weak correlation suggests that the variables do not exhibit a meaningful relationship. 
-
-The diagonal elements, highlighted in yellow, represent the self-correlation of each variable and are expectedly 1, reflecting a perfect correlation.  Off-diagonal elements are either close to zero or exhibit weak negative correlations (dark blue shades), indicating limited relationships among variables.
+Correlation analysis is a statistical technique that evaluates the strength and direction of the relationship between two variables. A strong correlation indicates that as one variable changes, the other variable tends to change predictably, while a weak correlation suggests that the variables do not exhibit a meaningful relationship. The diagonal elements, highlighted in yellow, represent the self-correlation of each variable and are expectedly 1, reflecting a perfect correlation.  Off-diagonal elements are either close to zero or exhibit weak negative correlations (dark blue shades), indicating limited relationships among variables.
 This lack of significant correlation implies that the dataset is diverse, with many variables providing unique information. Such a characteristic is advantageous for subsequent predictive modeling, as it minimizes the risk of multicollinearity, allowing each variable to contribute independently to the analysis.
 
 
-Data Splitting and Balancing 
+Data Splitting and Balancing.
 
 In this analysis, we aimed to prepare the dataset for predictive modeling by splitting the data into training and testing sets and addressing class imbalance in the target variables. Below are the steps taken and the results obtained.
 
@@ -103,7 +98,7 @@ Classification is the most common task involved in data mining. To predict the r
 The models demonstrated strong performance in predicting diabetes medication usage in hospital settings, particularly with the Random Forest and Decision Tree models achieving high accuracy and precision.
 However, predicting readmissions was more challenging, as most models exhibited low accuracy, indicating a need for further model optimization and exploration of additional data sources to enhance predictive performance.
 
-
+[Diab-Med-Readmission-pages-to-jpg-0004.jpg](https://postimg.cc/D84SVpxB)
 
 REFERENCES
 
