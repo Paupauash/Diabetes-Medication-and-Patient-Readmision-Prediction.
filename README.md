@@ -98,7 +98,7 @@ Classification is the most common task involved in data mining. To predict the r
 The models demonstrated strong performance in predicting diabetes medication usage in hospital settings, particularly with the Random Forest and Decision Tree models achieving high accuracy and precision.
 However, predicting readmissions was more challenging, as most models exhibited low accuracy, indicating a need for further model optimization and exploration of additional data sources to enhance predictive performance.
 
-[Diab-Med-Readmission-pages-to-jpg-0004.jpg](https://postimg.cc/D84SVpxB)
+<a href='https://postimg.cc/D84SVpxB' target='_blank'><img src='https://i.postimg.cc/D84SVpxB/Diab-Med-Readmission-pages-to-jpg-0004.jpg' border='0' alt='Diab-Med-Readmission-pages-to-jpg-0004'/></a>
 
 REFERENCES
 
