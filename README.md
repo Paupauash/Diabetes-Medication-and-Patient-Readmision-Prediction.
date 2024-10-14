@@ -48,31 +48,49 @@ Quantitative Data Transformation: We performed min-max normalization on the quan
 
 Explanatory Data Analysis (EDA)
 
-Patient repartition by Age and Gender.
-The bar chart presents the distribution of patients by age class and gender, with categories for female, male, and unknown/invalid. The age groups span from 0 to 100 years, with the highest patient count observed in the [70-80] age class, where 14,000 females and 12,100 males are reported. Notably, females consistently outnumber males in the older age groups, particularly in the [70-80] and [80-90] ranges, with a significant female majority in both categories. In contrast, males show a slight majority in the [50-60] age class, though the difference remains minimal. The youngest group, aged 0 to 10, has the lowest patient numbers, with only 100 patients recorded for males and females.
+
+The bar chart in Figure 1 presents the distribution of patients by age class and gender, with categories for female, male, and unknown/invalid. The age groups span from 0 to 100 years, with the highest patient count observed in the [70-80] age class, where 14,000 females and 12,100 males are reported. Notably, females consistently outnumber males in the older age groups, particularly in the [70-80] and [80-90] ranges, with a significant female majority in both categories. In contrast, males show a slight majority in the [50-60] age class, though the difference remains minimal. The youngest group, aged 0 to 10, has the lowest patient numbers, with only 100 patients recorded for males and females.
+
+[![Diab-Med-Readmission-pages-to-jpg-0001.jpg](https://i.postimg.cc/jSBRg3Dv/Diab-Med-Readmission-pages-to-jpg-0001.jpg)](https://postimg.cc/LJBdhTBZ)
+Figure 1: Patient repartition by Age and Gender
 
 
-Patient repartition by Race.
-The pie chart illustrates the distribution of patients based on race, showing that the majority are Caucasian, representing 77.01% of the total population. African Americans account for 18.88%, making them the second-largest racial group. Hispanic patients represent a smaller portion, with 2% of the total, followed by Asian patients, who comprise 0.63%. The "Other" category includes 1.48% of the patients. 
+The pie chart in Figure 2 illustrates the distribution of patients based on race, showing that the majority are Caucasian, representing 77.01% of the total population. African Americans account for 18.88%, making them the second-largest racial group. Hispanic patients represent a smaller portion, with 2% of the total, followed by Asian patients, who comprise 0.63%. The "Other" category includes 1.48% of the patients. 
 
-
-Patient distribution by Diagnosis.
-The bar charts provide a comprehensive overview of patient diagnoses using ICD-9 codes, showcasing the distribution across primary (diag_1), secondary (diag_2), and tertiary (diag_3) diagnostic categories. Circulatory issues consistently dominate across all three categories, affecting approximately 30,000 patients in each, highlighting the prevalence of cardiovascular problems both as primary conditions and comorbidities. Respiratory problems rank second in primary diagnoses but decrease in prominence in secondary and tertiary categories, suggesting they often drive initial hospital visits. Conversely, diabetes shows an interesting pattern, rising from fourth place in primary diagnoses to second in both secondary and tertiary categories, indicating its frequent role as a complicating factor or comorbidity. Digestive issues and injuries feature prominently in primary diagnoses but less so in subsequent categories, reflecting their nature as common reasons for seeking immediate care.
-
-
-Patient Distribution based on Admission and Discharge types.
-The horizontal bar charts illustrate patient distribution based on admission and discharge types. Emergency admissions account for the largest proportion with 54,000 patients, while elective and urgent admissions are reported for 19,000 and 18,000, respectively. Regarding discharge types, the majority of patients, 74,000 in total, were discharged to home care. Meanwhile, 19,000 patients were discharged to skilled nursing, rehabilitation, or psychiatric care facilities. These patterns highlight the predominant reliance on emergency services for admissions and home care as the most frequent discharge outcome.
-
-
-Diabetes medication and hospital readmission among patients.
-The bar charts  display key trends regarding diabetes medication and hospital readmission among patients. Of the total cohort, 78,000 patients (77%) were receiving diabetes medication, while 23,000 (23%) were not. Regarding hospital readmissions, 55,000 patients (55%) did not experience a readmission, 36,000 (36%) were readmitted more than 30 days post-discharge, and 11,000 (11%) were readmitted within 30 days. The high rate of readmissions, particularly in the >30-day group, suggests potential gaps in post-discharge care or disease management.
+[![Diab-Med-Readmission-pages-to-jpg-0002.jpg](https://i.postimg.cc/5NY4BM0j/Diab-Med-Readmission-pages-to-jpg-0002.jpg)](https://postimg.cc/BX3f3k2G)
+Figure 2:  Patient repartition by Race
 
 
 
-Correlation Analysis.
+Figure 3 provides a comprehensive overview of patient diagnoses using ICD-9 codes, showcasing the distribution across primary (diag_1), secondary (diag_2), and tertiary (diag_3) diagnostic categories. Circulatory issues consistently dominate across all three categories, affecting approximately 30,000 patients in each, highlighting the prevalence of cardiovascular problems both as primary conditions and comorbidities. Respiratory problems rank second in primary diagnoses but decrease in prominence in secondary and tertiary categories, suggesting they often drive initial hospital visits. Conversely, diabetes shows an interesting pattern, rising from fourth place in primary diagnoses to second in both secondary and tertiary categories, indicating its frequent role as a complicating factor or comorbidity. Digestive issues and injuries feature prominently in primary diagnoses but less so in subsequent categories, reflecting their nature as common reasons for seeking immediate care.
 
-Correlation analysis is a statistical technique that evaluates the strength and direction of the relationship between two variables. A strong correlation indicates that as one variable changes, the other variable tends to change predictably, while a weak correlation suggests that the variables do not exhibit a meaningful relationship. The diagonal elements, highlighted in yellow, represent the self-correlation of each variable and are expectedly 1, reflecting a perfect correlation.  Off-diagonal elements are either close to zero or exhibit weak negative correlations (dark blue shades), indicating limited relationships among variables.
+[![Diab-Med-Readmission-pages-to-jpg-0003.jpg](https://i.postimg.cc/59wdbN6B/Diab-Med-Readmission-pages-to-jpg-0003.jpg)](https://postimg.cc/QVxnqDgC)
+Figure 3:  Patient distribution by Diagnosis
+
+
+
+
+Figure 4 presents two horizontal bar charts illustrating patient distribution based on admission and discharge types. Emergency admissions account for the largest proportion with 54,000 patients, while elective and urgent admissions are reported for 19,000 and 18,000, respectively. Regarding discharge types, the majority of patients, 74,000 in total, were discharged to home care. Meanwhile, 19,000 patients were discharged to skilled nursing, rehabilitation, or psychiatric care facilities. These patterns highlight the predominant reliance on emergency services for admissions and home care as the most frequent discharge outcome.
+
+[![Diab-Med-Readmission-pages-to-jpg-0005.jpg](https://i.postimg.cc/FKDzPVQK/Diab-Med-Readmission-pages-to-jpg-0005.jpg)](https://postimg.cc/hJQKvxvF)
+Figure 4:  Patient Distribution based on Admission and Discharge types
+
+
+The bar charts in Figure 5 display key trends regarding diabetes medication and hospital readmission among patients. Of the total cohort, 78,000 patients (77%) were receiving diabetes medication, while 23,000 (23%) were not. Regarding hospital readmissions, 55,000 patients (55%) did not experience a readmission, 36,000 (36%) were readmitted more than 30 days post-discharge, and 11,000 (11%) were readmitted within 30 days. The high rate of readmissions, particularly in the >30-day group, suggests potential gaps in post-discharge care or disease management.
+
+[![Diab-Med-Readmission-pages-to-jpg-0004.jpg](https://i.postimg.cc/nc0BD6Bb/Diab-Med-Readmission-pages-to-jpg-0004.jpg)](https://postimg.cc/D84SVpxB)
+Figure 5: Diabetes medication and hospital readmission among patients
+
+
+Correlation Analysis
+
+Correlation analysis is a statistical technique that evaluates the strength and direction of the relationship between two variables. A strong correlation indicates that as one variable changes, the other variable tends to change predictably, while a weak correlation suggests that the variables do not exhibit a meaningful relationship. The resulting correlation matrix was visualized using a heatmap, where the strength and direction of associations between variables were color-coded in Figure 6.
+
+The diagonal elements, highlighted in yellow, represent the self-correlation of each variable and are expectedly 1, reflecting a perfect correlation.  Off-diagonal elements are either close to zero or exhibit weak negative correlations (dark blue shades), indicating limited relationships among variables.
 This lack of significant correlation implies that the dataset is diverse, with many variables providing unique information. Such a characteristic is advantageous for subsequent predictive modeling, as it minimizes the risk of multicollinearity, allowing each variable to contribute independently to the analysis.
+
+[![Rplot.png](https://i.postimg.cc/rFXhySvs/Rplot.png)](https://postimg.cc/NLD8prGv)
+Figure 6: Correlation Matrix Heatmap
 
 
 Data Splitting and Balancing.
@@ -90,7 +108,7 @@ We then examined the distribution of the target variables, readmitted and diabet
 
 Data Mining Methods
 
-Classification is the most common task involved in data mining. To predict the readmissions in the hospital and diabetes medication administration, various classification tasks were performed. 
+Classification is the most common task involved in data mining. To predict the readmissions in the hospital and diabetes medication administration, various classification tasks were performed. The results are in the R studio script files.
 
 
 Ø  CONCLUSION
@@ -98,7 +116,6 @@ Classification is the most common task involved in data mining. To predict the r
 The models demonstrated strong performance in predicting diabetes medication usage in hospital settings, particularly with the Random Forest and Decision Tree models achieving high accuracy and precision.
 However, predicting readmissions was more challenging, as most models exhibited low accuracy, indicating a need for further model optimization and exploration of additional data sources to enhance predictive performance.
 
-[![Diab-Med-Readmission-pages-to-jpg-0004.jpg](https://i.postimg.cc/nc0BD6Bb/Diab-Med-Readmission-pages-to-jpg-0004.jpg)](https://postimg.cc/D84SVpxB)
 
 REFERENCES
 
